@@ -1,0 +1,6 @@
+{
+  "name": "cors-client",
+  "scripts": {
+    "start": "node ./bin/www"
+  }
+}

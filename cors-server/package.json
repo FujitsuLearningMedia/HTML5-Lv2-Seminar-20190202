@@ -1,0 +1,6 @@
+{
+  "name": "cors-server",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
