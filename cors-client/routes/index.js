@@ -6,4 +6,16 @@ router.get('/', function(req, res) {
   res.render('index', { title: 'FLM' });
 });
 
+router.get('/indexeddb', function(req, res) {
+  res.render('Indexeddb');
+});
+
+router.get('/indexeddb2', function(req, res) {
+  res.render('Indexeddb2');
+});
+
+router.get('/sec', function(req, res) {
+  res.render('sec', { title: 'FLM' });
+});
+
 module.exports = router;
