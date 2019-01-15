@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Indexed Database - HTML5 API</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+    <script type="text/javascript" src="javascripts/IndexedDB.js"></script>
+</head>
+<body id="content">
+    <h1>Indexed Databaseサンプル</h1>
+    <h2>データの格納</h2>
+    <p>保存ボタンをクリックすると、従業員データが格納されます。</p>
+    <p>従業員番号 <input type="text" id="id" /></p>
+    <p>名前 <input type="text" id="name" /></p>
+		<p>
+        部署名 <input type="text" id="dept" />
+        <input type="button" id="saveBtn" value="保存" />
+		</p>
+    <h2>検索結果表示</h2>
+    <p>
+        Indexed Databaseの検索結果を表示します。検索はkeyPathまたはインデックスで実行できます。
+    </p>
+		<p>keyPathまたはインデックス <input type="text" id="search" /></p>
+  	<p>
+        <input type="button" id="keyPathBtn" value="keyPathで検索" />
+    	  <input type="button" id="indexBtn" value="インデックスで検索" />
+  	</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Primary Key(keyPath:ID)</th>
+                <th>値（value）</th>
+            </tr>
+        </thead>
+        <tbody id="dataTable"></tbody>
+    </table>
+</body>
+</html>
