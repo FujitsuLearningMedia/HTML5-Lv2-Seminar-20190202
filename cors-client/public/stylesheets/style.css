@@ -66,3 +66,9 @@ border: 1px solid #999999;
   margin-left:auto;
   width:600px; 
 }
+
+/*pre要素　ソースコード*/
+pre {
+  background-color: #f8f8f8;
+  padding: 5px 10px;
+}
