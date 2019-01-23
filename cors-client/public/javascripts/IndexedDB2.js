@@ -16,16 +16,16 @@ window.onload = async function () {
         if (e.oldVersion < 1) {
             //初回アクセスのため、オブジェクトストアを新規作成するためにIndexed Databaseを取得する
             db = request.result;
-            //VideoSettingオブジェクトストアを生成する。
+            //VideoStatusオブジェクトストアを生成する。
             db.createObjectStore("VideoStatus", { keyPath: "type" });
         }
     }
     request.onsuccess = function (e) {
         //接続したIndexed Databaseの取得
         db = e.target.result;
-        // VideoSettingオブジェクトストアでトランザクションを開始する
+        // VideoStatusオブジェクトストアでトランザクションを開始する
         var tran = db.transaction("VideoStatus", "readwrite");
-        // VideoSettingオブジェクトストアを取得する
+        // VideoStatusオブジェクトストアを取得する
         var store = tran.objectStore("VideoStatus");
         // 再生位置の取得
         var request1 = store.get("currentTime");
@@ -57,9 +57,9 @@ window.onload = async function () {
 }
 
 function writeVideoStatus(event) {
-    //VideoSettingオブジェクトストアでトランザクションを開始する
+    //VideoStatusオブジェクトストアでトランザクションを開始する
     var tran = db.transaction("VideoStatus", "readwrite");
-    // VideoSettingオブジェクトストアを取得する
+    // VideoStatusオブジェクトストアを取得する
     var store = tran.objectStore("VideoStatus");
 
     if (event.type === "pause") {
