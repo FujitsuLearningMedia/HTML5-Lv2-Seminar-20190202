@@ -19,21 +19,21 @@
 1. cmd上で`npm start`コマンドを実行する
 
 #### Indexed Database関連サンプル1
-1. ブラウザで[http://localhost:3000/indexeddb](http://localhost:3000/indexeddb)にアクセスする
+1. Chromeで[http://localhost:3000/indexeddb](http://localhost:3000/indexeddb)にアクセスする
 1. 「従業員番号」、「名前」、「部署名」のテキストボックスに任意の値を入力し、「保存」ボタンをクリックする
-1. **F12**キーを押下し、**applocation**タブを開く
+1. **F12**キーを押下し、**application**タブを開く
 1. Employeeオブジェクトストアにデータが保存されていることを確認する
 1. 「keyPathまたはインデックス」のテキストボックスにKeyPath（従業員番号）またはインデックス（名前）を入力する
 1. 「KeyPathで検索」または「インデックスで検索」ボタンをクリックし、保存された従業員情報が表示されることを確認する
 
 #### Indexed Database関連サンプル2
-1. ブラウザで[http://localhost:3000/indexeddb2](http://localhost:3000/indexeddb2)
+1. Chromeで[http://localhost:3000/indexeddb2](http://localhost:3000/indexeddb2)
 1. コントロールの再生ボタンを押して動画を再生する
 1. 数秒～数十秒経過後、コントロールの停止ボタンを押して動画を停止する
 1. コントロールで音量を変更する
 1. ブラウザを閉じて開きなおす
 1. 動画の再生位置が、停止した位置になっていることと、ミュートを解除したときの音量が、変更後の音量になっていることを確認する
-1. **F12**キーを押下し、**applocation**タブを開く
+1. **F12**キーを押下し、**application**タブを開く
 1. VideoStatusオブジェクトストアにデータが保存されていることを確認する
 
 #### セキュリティ関連サンプル
