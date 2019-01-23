@@ -8,9 +8,9 @@ window.onload = async function () {
     video.addEventListener("pause", writeVideoStatus, false);
     video.addEventListener("volumechange", writeVideoStatus, false);
 
-    //VideoStatus Indexed Databaseとの接続を開く
+    //VideoSetting Indexed Databaseとの接続を開く
     var request = indexedDB.open("VideoStatus", 1);
-    //VideoStatus Indexed Databaseが存在しない場合や、バージョンが1より古い場合は、
+    //VideoSetting Indexed Databaseが存在しない場合や、バージョンが1より古い場合は、
     //upgradeneededイベントが発生する
     request.onupgradeneeded = function (e) {
         if (e.oldVersion < 1) {
