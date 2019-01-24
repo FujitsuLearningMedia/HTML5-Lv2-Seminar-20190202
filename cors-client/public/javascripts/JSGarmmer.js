@@ -5,7 +5,7 @@ window.onload = function () {
     document.querySelector('#double').addEventListener('click', showEquality, false);
     document.querySelector('#triple').addEventListener('click', showEquality, false);
     document.querySelector('#execute').addEventListener('click', showResult, false);
-    document.querySelector('#propety').addEventListener('click', showProperties, false);
+    document.querySelector('#property').addEventListener('click', showProperties, false);
 }
 
 function showDataType (event) {
@@ -37,7 +37,6 @@ function showEquality (event) {
 function showResult () {
     var result = document.getElementById('result3');
     var val = 'A';
-    var tag;
 
     function print(){
         console.log(val);
@@ -59,7 +58,7 @@ function showProperties () {
         this.dept = "Development";
         this.work = function() {
             console.log("do test");
-        }
+        };
     }
     Employee.prototype.manage = function() {
         console.log("manage");
