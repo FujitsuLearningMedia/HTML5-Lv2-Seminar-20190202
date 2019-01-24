@@ -62,7 +62,7 @@ function showProperties () {
     }
     Employee.prototype.manage = function() {
         console.log("manage");
-    }
+    };
     var e = new Employee();
 
     Object.getOwnPropertyNames(e).forEach(
