@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript Grammer</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+    <script type="text/javascript" src="javascripts/JSGarmmer.js"></script>
+</head>
+<body id="content">
+    <h1>JavaScript 基本文法</h1>
+    <h2>データ型</h2>
+    <p>各ボタンを押すと、データ型を表示します。</p>
+    <p>
+        <pre>
+            <code>
+                var str1 = 'FLM';
+                var str2 = new String('LPI');
+            </code>
+        </pre>
+    </p>
+    <p><input type="button" id="primitive" value="str1"></p>
+    <p><input type="button" id="object" value="str2"></p>
+    <p>データ型：<span id="result1"></span></p>
+    <h2>演算子</h2>
+    <p>各ボタンを押すと、num1とnum2の比較結果を表示します。</p>
+    <p>
+        <pre>
+            <code>
+                var num1 = 10;
+                var num2 = '10';
+            </code>
+        </pre>
+    </p>
+    <p><input type="button" id="double" value="num1==num2;"></p>
+    <p><input type="button" id="triple" value="num1===num2;"></p>
+    <p>比較結果：<span id="result2"></span></p>
+    <h2>巻き上げ</h2>
+    <p>ボタンを押すと以下のコードの実行結果をコンソールに表示します。</p>
+    <p>
+        <pre>
+            <code>
+                var val = "A";
+
+                function print(){
+                    console.log(val);
+                    var val = "B";
+                    return val;
+                }
+                
+                console.log(print());
+                console.log(val);
+            </code>
+        </pre>
+    </p>
+    <p><input type="button" id="execute" value="実行"></p>
+    <h2>オブジェクト生成</h2>
+    <p>ボタンを押すと、オブジェクトeのプロパティを一覧で表示します。</p>
+    <p>
+        <pre>
+            <code>
+                function Employee() {
+                    this.name = "foge";
+                    this.dept = "Development";
+                    this.work = function() {
+                        console.log("do test");
+                    }
+                }
+                Employee.prototype.manage = function() {
+                    console.log("manage");
+                };
+                var e = new Employee();
+            </code>
+        </pre>
+    </p>
+    <p><input type="button" id="property" value="プロパティを表示"></p>
+    <table>
+        <thead>
+            <tr>
+                <th>プロパティ名</th>
+                <th>値</th>
+            </tr>
+        </thead>
+        <tbody id="result4"></tbody>
+    </table>
+</body>
+</html>
