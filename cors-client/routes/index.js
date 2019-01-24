@@ -18,4 +18,8 @@ router.get('/sec', function(req, res) {
   res.render('sec', { title: 'FLM' });
 });
 
+router.get('/grammer', function(req, res) {
+  res.render('grammer');
+});
+
 module.exports = router;
