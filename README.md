@@ -17,7 +17,9 @@
 1. ブラウザで[http://localhost:3000/](http://localhost:3000/)にアクセスする
 1. 別cmd上を立ち上げてcors-serverフォルダに移動する
 1. cmd上で`npm start`コマンドを実行する
-
+#### JavaScript基本文法サンプル
+1. Chromeで[http://localhost:3000/jsgrammer](http://localhost:3000/jsgrammer)にアクセスする
+1. 各サンプルの指示通りに操作し、動作を確認する
 #### Indexed Database関連サンプル1
 1. Chromeで[http://localhost:3000/indexeddb](http://localhost:3000/indexeddb)にアクセスする
 1. 「従業員番号」、「名前」、「部署名」のテキストボックスに任意の値を入力し、「保存」ボタンをクリックする
